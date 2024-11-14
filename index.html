@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree Structure</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #555;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      width: 100vw;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    section {
+      width: 500px;
+      background-color: #444;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #85d77f;
+      margin-bottom: 10px;
+    }
+
+    h3, h4 {
+      font-size: 1.2rem;
+      color: #85d77f;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .toggle-button, #toggle-details {
+      background-color: #336699;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 5px;
+    }
+
+    .toggle-button:hover {
+      background-color: #25547a;
+    }
+
+    /*
+    .toggle-button:focus {
+      outline: none;
+      background-color: #1d4160;
+    }
+    */
+
+    .details {
+      margin-left: 15px;
+      margin-top: 5px;
+      padding-left: 10px;
+      border-left: 2px solid #ddd;
+      display: none;
+    }
+
+    .nested-section {
+      margin-top: 8px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>Arboriculture 101</h1>
+
+  <section id="tree-structure">
+    <h2>Tree Structure</h2>
+    <p>A tree's structure includes key elements like the trunk, branches, and crown, all of which support growth and stability. Arborists focus on maintaing this structure to ensure the tree's health and balance.</p>
+    
+    <ul>
+      <li><strong>Trunk:</strong> The central support, transporting water and nutrients between roots and leaves.</li>
+      <li><strong>Branches:</strong> Extend from the trunk, supporting the crown and carrying leaves and, sometimes, fruit.</li>
+      <li><strong>Crown:</strong> The upper part of the tree where branches and leaves form, supporting photosynthesis and growth.</li>
+      <li><strong>Leader:</strong> The main vertical stem, which helps define the tree's shape and height.</li>
+    </ul>
+  </section>
+
+  <section id="roots">
+    <h2>Tree Roots</h2>
+    <p>Roots anchor the tree and absorb water and nutrients from the soil.</p>
+
+    <ul>
+      <li><strong>Taproots:</strong> Deep, central roots that anchor the tree and reach water reserves.</li>
+      <li><strong>Lateral Roots:</strong> Spread horizontally, stabilizing the tree and absorbing surface nutrients.</li>
+      <li><strong>Fibrous Roots:</strong> A network of thin roots near the soil surface that absorb water and minerals quickly.</li>
+    </ul>
+
+    <h3>Root Growth and Environmental Factors</h3>
+    <ul>
+      <li><strong>Water Availability</strong>
+        <ul>
+          <li>Roots grow deeper and spread wider when water is scarce, seeking out new sources.</li>
+        </ul>
+      </li>
+      <li><strong>Soil Type</strong>
+        <ul>
+          <li>Sandy soil: Easy for roots to spread, but it drains water quickly.</li>
+          <li>Clay soil: Retains water well, but can be harder for roots to penetrate.</li>
+        </ul>
+      </li>
+      <li><strong>Oxygen Levels</strong>
+        <ul>
+          <li>Roots need oxygen for respiration; compacted soil limits oxygen availability, hindering growth.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="trunk">
+    <h2>Tree Trunk</h2>
+    <p>The trunk supports the branches and transports the nutrients between the roots and the leaves.</p>
+    <ul>
+      <li><strong>Bark:</strong> The tough, protective outer layer that guards against pests and physical damage.</li>
+      <li><strong>Cambium:</strong> A thin layer of cells responsible for growth in the tree's diameter.</li>
+      <li><strong>Sapwood:</strong> The living wood layer that transports water and nutrients throughout the tree.</li>
+      <li><strong>Heartwood:</strong> The strong, central core that provides stability and support, though it no longer actively transports nutrients.</li>
+      <li><strong>Xylem:</strong>  Tubes that carry water from the roots to the leaves, crucial for hydration and nutrient delivery.</li>
+    </ul>
+  </section>
+
+  <section id="growth-rings">
+    <h2>Growth Rings</h2>
+    <p>Each year, trees form a new growth ring as they grow. These rings reveal the trees age and offer clues about past environmental conditions.</p>
+    <ul>
+      <li><strong>Formation:</strong> Growth rings develop each growing season. Wider rings indicate favorable conditions, while narrower rings can show signs of stress.</li>
+      <li><strong>Dendrochronology:</strong> The study of growth rings to understand a tree's life history and climate changes over time.</li>
+      <li><strong>Tree Age:</strong> By counting the rings, we can determine the age of the tree, giving insights into its maturity and resilience.</li>
+    </ul>
+  </section>
+
+  <section id="defenses">
+    <h2>Tree Defenses</h2>
+    <p>Trees have built-in defense systems to protect against pests, diseases, and physical damage. Understanding these helps arborists provide better care when injuries occur.</p>
+
+    <ul>
+      <li><strong>Chemical Defenses:</strong> Tree produce compounds like tannins to deter insects and pathogens.</li>
+      <li><strong>Compartmentalization:</strong> Trees isolate damaged tissue to contain decay and prevent it from spreading.</li>
+      <li><strong>Wound Response:</strong> Instead of healing, trees cover wounds to protect exposed tissue and minimize infection risks.</li>
+    </ul>
+  </section>
+
+  <section id="pruning">
+    <h2>Pruning Basics</h2>
+    <p>Pruning helps trees maintain healthy structure, improve growth, and remove damaged or diseased branches. Each cut type has a specfic purpose.</p>
+    <ul>
+      <li><strong>Thinning Cut:</strong> Removes a branch at its origin, improving airflow and light distribution.</li>
+      <li><strong>Heading Cut:</strong> Shortens a branch to a bud, encouraging new, denser growth.</li>
+      <li><strong>Removal Cut:</strong> Completely removes a branch to eliminate dead or infected wood.</li>
+    </ul>
+  </section>
+
+  <section id="pests-diseases">
+    <h2>Pests and Diseases</h2>
+    <p>Trees are vulnerable to various pests and diseases that can affect their health, growth, and lifespan. Arborists play a key role in identifying and managing these threats.</p>
+
+    <ul>
+      <li><strong>Aphids:</strong> Sap feeding insects that cause leaf discoloration and weaken the tree.</li>
+      <li><strong>Emerald Ash Borer:</strong> A destructive beetle that feeds on ash trees' inner bark, often leading to tree death.</li>
+      <li><strong>Dutch Elm Disease:</strong> A fungal infection that disruptswater movement in elms, causing wilting and dieback.</li>
+      <li><strong>Powdery Mildew:</strong> A fungus that coats leaves in a white powder, impacting photosynthesis and overall health.</li>
+    </ul>
+  </section>
+
+  <section id="soil-roots">
+    <h2>Soil and Roots</h2>
+    <p>Healthy soil and root systems are essential for tree growth, stability, and overall health. Arborists focus on maintaining soil quality and root health to support trees.</p>
+
+    <ul>
+      <li><strong>Roots as Anchors:</strong> Roots stabilize the tree, helping it stand firm during strong winds.</li>
+      <li><strong>Water and Nutrient Absoprtion:</strong> Roots absorb essential water and nutrients that support growth.</li>
+      <li><strong>Drainage</strong> Well-draining soil prevents root rot by allowing excess water to flow away from the roots.</li>
+      <li><strong>Nutrient-Rich Soil:</strong> Trees need balanced nutrients like nitrogen, phosphorus, and potassium for healthy growth.</li>
+      <li><strong>Soil pH:</strong> Most trees prefer a slightly acidic to neutral pH for optimal nutrient absorption.</li>
+    </ul>
+  </section>
+
+  <section id="photosynthesis">
+    <h2>Photosynthesis</h2>
+    <p>Photosynthesis is the process by which trees produce energy. Using sunlight, water, and carbon dioxide, they create food and fuels growth and repair, while releasing oxygen as a byproduct.</p>
+
+    <ul>
+      <li><strong>Sunlight:</strong> Absorbed by leaves, it provides the energy needed for photosynthesis.</li>
+      <li><strong>Water:</strong> taken up from the roots and transported to the leaves, where it helps produce ebergy.</li>
+      <li><strong>Carbon Dioxide:</strong> Trees absorb CO<sub>2</sub> from the air, using it to produce energy and release oxygen.</li>
+    </ul>
+  </section>
+
+  <section id="tree-stressors">
+    <h2>Tree Response to Environmental Stressors</h2>
+    <p>Trees encounter various stressors, like drought, nutrient deficiency, and pests, that can impact their health.</p>
+
+    <ul>
+      <li><strong>Drought:</strong> Trees may drop leaves to reduce water loss, slow growth, or go dormant during severe droughts.</li>
+      <li><strong>Nutrient Deficiency:</strong> Trees adjust root growth to reach nutrients and may store them more efficiently to support survival.</li>
+      <li><strong>Insect Infestation:</strong> Trees produce chemicals to defend themselves against pests or grow thicker bark as a physical barrier.</li>
+      <li><strong>Poor Soil:</strong> Trees develop extensive root systems to reach water and nutrients in challenging soil conditions.</li>
+      
+    </ul>
+  </section>
+
+  <section id="tree-pruning">
+    <h2>Tree Pruning Fundamentals</h2>
+    <p>Pruning is an essential treee caer technique that promotes health, safety, and structural integrity. Arborists prune to remove dead or damaged branches, improve tree shape, and prevent potential hazards.</p>
+
+    <ul>
+      <li><strong>Health:</strong> Pruning removes dead, diseased, or damaged branches, reducing decay and promoting growth.</li>
+      <li><strong>Safety:</strong> Pruning reduces the risk of falling branches and keeps growth away from hazards like power lines.</li>
+      <li><strong>Structure:</strong> Pruning shapes the tree to ensure balanced growth and prevent structural issues.</li>
+      <li><strong>Timing:</strong> Prune during the dormant season (often late winter) to minimize stress on the tree.</li>
+    </ul>
+  </section>
+
+  <section id="tree-fertilization">
+    <h2>Tree Fertilization</h2>
+    <p>Fertilization provides trees with essential nutrients to support growth and health.</p>
+
+    <!--Short Summary-->
+    <ul>
+      <li><strong>Purpose:</strong> Supplies nutrients to enhance tree health.</li>
+      <li><strong>Timing:</strong> Typically done in early spring.</li>
+    </ul>
+
+    <!--Toggle Button and Extra Details-->
+    <button id="toggle-details">Read More</button>
+    <div id="extra-details" style="display:none;">
+      <p>Additional Information on Fertilization:</p>
+      <li><strong>Types of Fertilizer:</strong> Tree often need specific N-P-K ratios.</li>
+      <li><strong>Applications:</strong> Spread fertilizer around the drip line, where the roots are active.</li>
+      <li><strong>Soil Testing:</strong> Helps determine exact nutrient needs for best results.</li>
+    </div>
+  </section>
+
+  <section id="pruning-techniques">
+    <h2>Pruning Techniques and Mistakes</h2>
+    <p>Pruning is essential for maintaining tree health, but improper cuts or timing can damage a tree. Below are common pruning mistakes to avoid:</p>
+
+    <div class="pruning-section">
+      <h3>Topping</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p><strong>Topping</strong> is when large branches are cut back severely, often to reduce height. It weakens the tree, leading to poor regrowth and an increased risk of disease or depth.</p>
+        <!--Placeholder for image of topping damage-->
+        <img src="./img/" alt="Topping example">
+      </div>
+    </div>
+
+    <div class="pruning-section">
+      <h3>Flush Cutting</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display:none;">
+        <p><strong>Flush Cutting</strong> is when branches are cut too close to the trunk removing the branch collar. This interferes with the trees ability to heal and can lead to decay.</p>
+        <!--Placeholder for Image of Flush Cutting-->
+        <img src="./img/" alt="Flush cutting example">
+      </div>
+    </div>
+
+    <div class="pruning-section">
+      <h3>Over-Pruning</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p><strong>Over-Pruning</strong> involves removing too many branches at once. This weakens the tree be reducing its ability to photosynthesize and produce food.</p>
+        <!--Placeholder for over-pruning image-->
+        <img src="./img/" alt="Over pruned tree.">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="wound-response">
+    <h2>Wound Response in Trees</h2>
+
+    <p>Trees respond to wounds differently than animals. They compartmentalize the damage to prevent the spread of decay.</p>
+
+    <!--CODIT Section-->
+    <div class="response-sections">
+      <h3>1. Compartmentalization of Decay in Trees (CODIT)</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>CODIT is a natural defense system. Trees form boundaries around the wound to limit the spread of pathogens and decay.</p>
+
+        <h4>Stages of CODIT</h4>
+        <button class="toggle-button">Learn About CODIT Stages</button>
+        <div class="details" style="display: none;">
+          <p>The CODIT model describes four stages of wall formation, each creating a barrier to limit decay:</p>
+          <ul>
+            <li>Wall 1: Restricts upward and downward spread.</li>
+            <li>Wall 2: Prevents inward spread toward the tree's core.</li>
+            <li>Wall 3: Limits lateral spread.</li>
+            <li>Wall 4: A strong barrier that keeps decay isolated.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Callus Formation Section-->
+    <div class="response-section">
+      <h3>2. Callus Formation</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>Callus tissue grows around a wound to eventually seal it. This process is gradual but essential for wound closure.</p>
+      </div>
+    </div>
+
+    <!--Decay Process Section-->
+    <div class="response-section">
+      <h3>3. Decay Process</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>If decay sets in, it can spread throught the tree. Trees try to contain decay using their natural barriers, but deep wounds can lead to extensive decay.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tree-bark">
+    <h2>Tree Bark</h2>
+
+    <p>The bark of a tree plays a vital role in protecting and supporting its health. Let's explore its structure and functions.</p>
+
+
+    <!--Functions of Bark Section-->
+    <div class="bark-section">
+      <h3>1. Function of Bark</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>Bark acts as a shield, protecting trees from injuries, pathogens, and harsh weather.</p>
+      </div>
+    </div>
+
+    <!--Layers of Bark Section-->
+    <div class="bark-section">
+      <h3>2. Layers of Bark</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        
+        <!--Outer Bark Section-->
+        <div class="nested-section">
+          <h4>Outer Bark</h4>
+          <button class="toggle-button">Read More</button>
+          <div class="details" style="display: none;">
+            <p>The outer bark is the tree's first line of defense, insulating it and protecting against external damage.</p>
+          </div>
+        </div>
+
+        <!--Inner Bark Section-->
+        <div class="nested-section">
+          <h4>Inner Bark (Phloem)</h4>
+          <button class="toggle-button">Read More</button>
+          <div class="details" style="display: none;">
+            <p>The inner bark, or phloem, is responsible for transporting nutrients from the leaves to the rest of the tree.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Bark Texture Section-->
+    <div class="bark-section">
+      <h3>3. Bark Texture and Adaptation</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>The texture and thickness of bark can vary widely. Some species have thick, rough bark to survive fires, while others have thin, smooth bark for flexibility and rapid growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tree-roots">
+    <h2>Tree Roots</h2>
+
+    <p>Tree roots play a crucial role in supporting the tree and absorbing necessary resources. Let's learn about the different types of roots and their functions.</p>
+
+    <!-- Function of Roots Section -->
+    <div class="root-section">
+      <h3>1. Functions of Roots</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>Roots anchor the tree, absorb water and nutrients, and store essential resources.</p>
+      </div>
+    </div>
+
+    <!-- Types of Roots Section -->
+    <div class="root-section">
+      <h3>2. Types of Roots</h3>
+      <button class="toggle-button">Expand Types</button>
+      <div class="details" style="display: none;">
+        
+        <!-- Taproots Section -->
+        <div class="nested-section">
+          <h4>Taproots</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>The taproot is a primary root that grows deep into the soil, providing stability and accessing deep water sources.</p>
+          </div>
+        </div>
+
+        <!-- Lateral Roots Section -->
+        <div class="nested-section">
+          <h4>Lateral Roots</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>Lateral roots grow horizontally, close to the oil surface, to collect nutrients and water.</p>
+          </div>
+        </div>
+
+        <!-- Fibrous Roots Section -->
+        <div class="nested-section">
+          <h4>Fibrous Roots</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>A network of small roots, known ad fibrous roots, increases the trees capacity to absorb water and minerals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Root Zone Section -->
+    <div class="root-section">
+      <h3>3. Root Zone (Drip Line)</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>The root zone often extends to the edge of the tree's canopy, or drip line, requiring protection from soil compaction or damage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tree-leaves">
+    <h2>Tree Leaves</h2>
+
+    <p>Leaves are the energy factories of trees. Let's explore the structure and function of leaves and learn about photosynthesis.</p>
+
+    <!-- Function of Leaves Section  -->
+    <div class="leaf-section">
+      <h3>1. Function of Leaves</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>Leaves are the primary site of photosynthesis. In this process, the tree converts sunlight, water and carbon dioxide into glucose, which fuels growth and helps the tree maintain its structure. Healthy leaves are a sign of a healthy tree. Leaves that are small, yellowing, or malformed may indicate underlying issues such as nutrient deficiencies, water stress, or pest-infestations.</p>
+      </div>
+    </div>
+
+    <!-- Strucure of Leaves Section -->
+    <div class="leaf-section">
+      <h3>2. Structure of Leaves</h3>
+      <button class="toggle-button">Expand Structure</button>
+      <div class="details" style="display: none;">
+      
+        <!-- Blade Section -->
+        <div class="nested-section">
+          <h4>Blade</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>The blade is the flat, broad part of the leaf where most photosynthesis takes place. Chlorophyll in the blade captures sunlight to fuel this process. The size, texture, and color of the blade can offer clues about a tree's health. For example, spotting, holes, or discoloration may indicate fungal imfections, pests, or air pollution, all of which can reduce a tree's energy intake.</p>
+          </div>
+        </div>
+
+        <!-- Petiole Section -->
+        <div class="nested-section">
+          <h4>Petiole</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>The petiole connects the leaf to the branch and proveide a pathway for nutrients and water. A weak or brittle petiole could indicate a deficiency in nutrients or water. The petiole's angle and orientation help position the blade to maximize sunlight capture. Arborists should watch for any color changes in the petiole which can indicate nutrient deficiencies, like nitrogen (yellowing).</p>
+          </div>
+        </div>
+
+        <div class="nested-section">
+          <h4>Veins</h4>
+          <button class="toggle-button">DEtails</button>
+          <div class="details" style="display: none;">
+            <p>Veins are the vascular network of the leaf, distributing water and minerals from the soil and glucose produced in the leaf. Clear, well-defined veins often signal good health. Arborists can also use vein patterns for tree identification, ad different species have unoique venation. If veins are pale or poorly defined, it may indicate a nutrient deficiency or stress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photosynthesis Section -->
+    <div class="leaf-section">
+      <h3>3. Photosynthesis</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>Photosynthesis enables trees to convert sunlight, water, and carbon dioxide into glucose and oxygen. This process has two main stages: light-dependent reactions (where sunlight splits water to produce energy), and light-independent reactions (where carbon dioxide is used to create glucose). Arborists can support photosynthesis ny ensuring trees receive adequate light, bala         nced nutrients, and proper water levels. Increased sunlight can be provided through pruning if necessary.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="branches">
+    <h2>Branches</h2>
+    <p>Branches provide structure and hold the leaves, helping to spread them to capture sunlight. They have natural ways to adapt and protect themselves from these challenges.</p>
+  </section>
+
+  <section id="tree-stems">
+    <h2>Tree Stems</h2>
+
+    <p>The stems are essential for support and nutrient transportation. Let's look at their structure and practical ways to monitor stem health.</p>
+
+
+    <!-- Function of Stems Section -->
+    <div class="stem-section">
+      <h3>1. Function of Tree Stems</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>The stem or trunk supports the tree's structure and transports water, nutrients, and sugars between roots and leaves. Damage to a tree's stem can disrupt these processes, leading to a weakened tree. Arborists monitor the stem for injuries, cracks, or decay to ensure the tree remains healthy and strong.</p>
+      </div>
+    </div>
+
+    <!-- Anatomy of Stems Section -->
+    <div class="stem-section">
+      <h3>2. Anatomy of Tree Stems</h3>
+      <button class="toggle-button">Expand Anatomy</button>
+      <div class="details" style="display: none;">
+      
+        <!-- Bark Sections -->
+        <div class="nested-section">
+          <h4>Bark</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>The bark is the outer layer of the tree stem, protecting against pests, disease, and physical damage.</p>
+          </div>
+        </div>
+
+        <!-- Cambium Section -->
+        <div class="nested-section">
+          <h4>Cambium</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>The cambium layer produces new cells, contributing to stem growth. Damaging the cambium through cuts or <strong>girdling</strong> can interrupt nutrient flow, potentially killing parts of the tree.</p>
+          </div>
+        </div>
+
+        <!-- Xylem Section -->
+        <div class="nested-section">
+          <h4>Xylem</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>The xylem transports water and nutrients from roots upward. Insect boreres or decay in the xylem can reduce nutrient flow, weakening the tree. Signs include wilting branches or foliage decline.</p>
+          </div>
+        </div>
+
+        <!-- Phloem Section -->
+        <div class="nested-section">
+          <h4>Phloem</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>The phloem distributes sugars from leaves to roots for storage and growth. Damaged phloem compromises nutrients flow, often resulting in poor root health and affecting the tree's stability and growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practical Monitoring Techniques Section -->
+    <div class="stem-section">
+      <h3>3. Practical Monitoring Techniques</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>Arborists can monitor stem health through physical inspections for signs of damage, and by using sound and resistance tests to detect internal decay. Hollow sounds or soft spots may indicate serious internal issues.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tree-roots">
+    <h2>Tree Roots</h2>
+    <p>Roots are critical for a tree's health and stability. Here's an in-depth look at the types of roots and how arborists care for them.</p>
+
+    <!--Function of Roots Section -->
+    <div class="root-section">
+      <h3>1. Functions of Tree Roots</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>Roots anchor the tree, absrob water and nutrients, and store energy. Poor root health, often due to compaction or root cutting, can weaken the tree.</p>
+      </div>
+    </div>
+
+    <!-- Types of Roots Section -->
+    <div class="root-section">
+      <h3>Types of Roots</h3>
+      <button class="toggle-button">Expand Types</button>
+      <div class="details" style="display: none;">
+
+        <!-- Primary Roots Section -->
+        <div class="nested-section">
+          <h4>Primary Roots</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>Primary roots are the main roots growing from the base, offering core support and structure for stability.</p>
+          </div>
+        </div>
+
+        <!-- Lateral Roots Section -->
+        <div class="nested-section">
+          <h4>Lateral Roots</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>Lateral roots spread horizontally to support the tree and maximize absorption. Arborists protect lateral roots from damage by minimizing soil disturbance around the base.</p>
+          </div>
+        </div>
+
+        <!-- Fine Roots Section -->
+        <div class="nested-section">
+          <h4>Fine Roots</h4>
+          <button class="toggle-button">Details</button>
+          <div class="details" style="display: none;">
+            <p>Fine roots, found near the surface, absorb water and nutrients efficiently. Arborists take care to avoid soil compaction and excessive dryness, which can damage these roots.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Critical Root Zone Section -->
+    <div class="root-section">
+      <h3>3. Critical Root Zone (CRZ)</h3>
+      <button class="toggle-button">Read More</button>
+      <div class="details" style="display: none;">
+        <p>The CRZ is the area around a tree where roots are most concentrated. It spans the canopy's radius, and arborists minimize disruptions here to preserve root health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tree-growth-processes">
+    <h2>Tree Growth Processes</h2>
+
+    <!-- Growth Patterns Section -->
+    <div class="growth-section">
+      <h3>1. Growth Patterns</h3>
+      <button class="toggle-button">Read More</button>
+      <p class="details" style="display: none;">Trees exhibit unique growth patterns, primarily driven by two types of growth: primary growth (lengthening) and secondary growth (widening). Primary gowth occurs at the tips of the roots and shoots, extending the tree's reach for sunlight, water, and nutrients. This process is enabled by meristem cells in these areas, which actively divide and create new cells that elongate the plant body. Over time, this extension not only supports the tree's upward growth but also improve's access to resources necessary for photosynthesis and nutrient absorption. Meanwhile, secondary growth takes place in the vascular cambium, a thin layer of cells between the bark and wood. This type of growth produces xylem (wood) and phloem (bark) cells, which thicken the trunk and branches, allowing the tree to support greater height and canopy spread.</p>
+    </div>
+    
+
+    <!-- Vascular Tissues Section -->
+    <div class="growth-section">
+      <h3>2. Vascular Tissues</h3>
+      <button class="toggle-button">Read More</button>
+      <p class="details" style="display: none;">Trees depend on vascular tissues to transport essential water, nutrients, and sugars throughout their structure. The xylem is responsible for moving water and dissolved minerals from the roots to the leaves, where photosynthesis occurs. Through a process known as transpiration, water evaopration from the leaf surface, creating a pull that draws more water upward through the xylem. In contrast, the phloem sugars  and organic compunds created during photosynthesis from the leaves to other parts of the tree. This transportation system is essential for sustaining growth, repairing damage, and supprting energy intensive reproduction processes like flowering and seed production. Together, these processes allow trees to adapt and thrive in their environment, responding to chnages in sunlight, water availability, and temperature iver their lifespan.</p>
+    </div>
+   
+    <!-- Compartmentilization Section-->
+    <div class="growth-section">
+      <h3>3. Compartmentalization</h3>
+      <button class="toggle-button">Read More</button>
+      <p class="details" style="display: none;">Trees undergo a fascinating form of compartmentalization, a natural process of isolating damaged or infected areas to prevent the spread of decay. When a tree experiences injury, such as a broken limb or fungal infection, it responds by creating chemical and physical barriers around the affected area. These barriers consist of specialized cells and compounds that limit the spread of pathogens and rot. This process is especially important in older larger trees, where damged areas could otherwise compromise structural integrity. Understanding compartmnetalization helps arborists assess tree health, make informed pruning decisions, and recommend treatments that align with the tree's natural healing mechanisms. By respecting these internal processes, arborists can work with a tree's biology to encourage stronger, healthier growth.</p>
+    </div>
+    
+  </section>
+
+  <section id="leaves">
+    <h2>Leaves</h2>
+    <p>Leaves are responsible for photosynthesis, converting sunlight into energy for the tree.</p>
+
+    <ul>
+      <li><strong>Photosynthesis:</strong> A process where leaves use sunlight, water, and carbon dioxide to produce glucose and oxygen, providing energy for the tree.</li>
+      <li><strong>Clorophyll:</strong> The green pigment in leaves that capture sunlight, essential for photosynthesis.</li>
+      <li><strong>Stomata:</strong> Small pores on the leaf surface that control gas exchange, allowing carbon dioxide in and oxygen out.</li>
+      <li><strong>Transpiration:</strong> The process of water evaporating from the leaves, which pullswater up through the xylem from the roots.</li>
+    </ul>
+  </section>
+
+  <section id="tree-environmental-stree">
+    <h2>Tree Responses to Environmental Stressors</h2>
+
+    <!-- Water Availability -->
+    <div>
+      <h3>1. Water Availability</h3>
+      <button class="toggle-button">Read More</button>
+      <p class="details" style="display: none">Tree are exposed to various environmental stressors that influnce their health, growth and longevity. One of the most significatn stressors is water availability. When faced with drought conditions, trees respond by closing the stomata on their leabes to reduce water loss through transpiration. This closure, while conserving water , limits photosynthesis since less carbon dioxide enters the leave. Some tree species also develop deeper root systems in response to repeated drought, allowing them to access water reserves in the soil. Conversely, during excessive rain or flooding, trees can suffer from oxygen depletion in the root zone, which impairs root function and can lead to root rot.</p>
+    </div>
+
+    <!-- Temperture Extremes -->
+    <div>
+      <h3>2. Temperature Extremes</h3>
+      <button class="toggle-button">Read More</button>
+      <p class="details" style="display: none;">Trees also respond to temperature extremes. In cold climates, deciduous trees drop their leaves in winter to conserve energy and reduce the risk of frost damage to delicate leaf tissues. During extreme heat, trees face challenges like dehydration and heat stress, leading to leaf scorch or browning. Some trees exhibit adaptive mechanisms such as sunken stomata or waxy coatings on leaves to minimize water loss and protect against intense sunlight. In urban environments, where temperatures can be significantly higher than rural areas due to the urban heat island effect, heat resistant species or cultivars are often chosen for planting to ensure better survival and growth.</p>
+    </div>
+
+    <!--  Biotic Stressors -->
+
+    <div>
+      <h3>3. Biotic Stressors</h3>
+      <button class="toggle-button">Read More</button>
+      <p class="details" style="display: none;">Trees must also contend with biotic stressors, such as pests and diseases. In response to an insect attack, trees often release volatile organic compounds that attract natural predators of the attacking pest, creating a defense mechanism that reduces damage. For instance, a tree under attack by caterpillars  may release chemicals that attract parasitic wasps which lay eggs on the caterpillars. Trees also compartmentalize infections caused by fungi or bacteria, isolating the infected tissues to prevent the spread of pathogens. Understanding these responses allows arborists to identify stress symptoms early and recommend treatments that support the trees natural defense systems, such as selective pruning to remove branches or recommending watering strategies that mitigate drought stress.</p>
+    </div>
+
+
+  </section>
+
+  <script>
+
+    // Select all toggle buttons and details sections
+    const toggleButtons = document.querySelectorAll('.toggle-button');
+    const detailsSections = document.querySelectorAll('.details');
+
+    // Loop through each button and add a click event listner
+    toggleButtons.forEach((button, index) => {
+      button.addEventListener('click', function() {
+        // Toggle the display of the corresponding details section
+        const details = detailsSections[index];
+
+        // Toggle Dispay of the details section
+        const isDetailsVisible = details.style.display === 'block';
+        details.style.display = isDetailsVisible ? 'none' : 'block';
+
+        // Change button text
+        button.textContent = isDetailsVisible ? 'Read More' : 'Read Less';
+      });
+    });
+
+
+
+    document.getElementById('toggle-details').addEventListener('click', function() {
+      const details = document.getElementById('extra-details');
+      details.style.display = details.style.display === 'none' ? 'block' : 'none';
+      this.textContent = details.style.display === 'none' ? 'Read More' : 'Read Less';
+    });
+  </script>
+</body>
+</html>
